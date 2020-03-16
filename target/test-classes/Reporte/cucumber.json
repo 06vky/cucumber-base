@@ -1,0 +1,193 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-14T14:55:00.574Z",
+        "before": [
+          {
+            "result": {
+              "duration": 151475564478,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "To validate the user details",
+        "description": "",
+        "id": "to-validate-the-adactin-page;to-validate-the-user-details",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.step.Hooks.afterScenario(Hooks.java:31)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "duration": 156330745,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2921052,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Adactin homepage",
+            "match": {
+              "location": "StepDefinition.user_is_on_the_Adactin_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13029828251,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters his details",
+            "match": {
+              "location": "StepDefinition.user_enters_his_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Rock12345",
+                  "Rock12345"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6485121307,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "StepDefinition.user_clicks_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 722321,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify the message",
+            "match": {
+              "location": "StepDefinition.user_should_verify_the_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27342804962,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should search hotel",
+            "match": {
+              "location": "StepDefinition.user_should_search_hotel(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "location",
+                  "Hotels",
+                  "roomtypes",
+                  "numberofrooms",
+                  "adultsperroom",
+                  "childrenperroom"
+                ]
+              },
+              {
+                "cells": [
+                  "London",
+                  "Hotel Sunshine",
+                  "Super Deluxe",
+                  "3 - Three",
+                  "2 - Two",
+                  "1 - One"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19791715884,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters payment",
+            "match": {
+              "location": "StepDefinition.user_enters_payment(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "billingaddress",
+                  "creditcardnumber",
+                  "creditcardtype",
+                  "expirymonth",
+                  "expiryyear",
+                  "cvvnumber"
+                ]
+              },
+              {
+                "cells": [
+                  "Mani",
+                  "S",
+                  "Ariyalur",
+                  "9765432112345678",
+                  "VISA",
+                  "April",
+                  "2023",
+                  "234"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21470173460,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User gets orderid",
+            "match": {
+              "location": "StepDefinition.user_gets_orderid()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Adactin Page",
+    "description": "",
+    "id": "to-validate-the-adactin-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Adactin.feature",
+    "tags": []
+  }
+]
